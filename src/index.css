@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  --color-holographic-cyan: #00f3ff;
+  --color-holographic-purple: #9d00ff;
+  --color-holographic-blue: #0066ff;
+  --color-holographic-pink: #ff00e5;
+  --color-holographic-dark: #0a0a0c;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow-pulse: glow-pulse 4s ease-in-out infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes glow-pulse {
+
+    0%,
+    100% {
+      opacity: 0.5;
+      filter: brightness(1);
+    }
+
+    50% {
+      opacity: 1;
+      filter: brightness(1.5);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% center;
+    }
+
+    100% {
+      background-position: 200% center;
+    }
+  }
+}
+
+:root {
+  background-color: #0a0a0c;
+  color: #fff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Base Classes (Avoid @apply for custom names to prevent v4 errors) */
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.holographic-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  inset: -100%;
+  opacity: 0;
+  background: linear-gradient(45deg,
+      transparent,
+      rgba(0, 243, 255, 0.1),
+      rgba(157, 0, 255, 0.1),
+      transparent);
+  transition: opacity 0.4s;
+}
+
+.holographic-card:hover {
+  border-color: rgba(0, 243, 255, 0.5);
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.2),
+    0 0 40px rgba(157, 0, 255, 0.1);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  animation: shimmer 2s linear infinite;
+}
+
+.neon-text-cyan {
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.5),
+    0 0 20px rgba(0, 243, 255, 0.2);
+}
+
+.neon-text-purple {
+  text-shadow: 0 0 10px rgba(157, 0, 255, 0.5),
+    0 0 20px rgba(157, 0, 255, 0.2);
+}
+
+.holographic-button {
+  background-color: transparent;
+  border: 2px solid rgba(0, 243, 255, 0.3);
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  color: #00f3ff;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.holographic-button:hover {
+  border-color: #00f3ff;
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.4);
+  transform: translateY(-4px);
+  background: linear-gradient(45deg, rgba(0, 243, 255, 0.1), rgba(157, 0, 255, 0.1));
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#00f3ff, #9d00ff);
+  border-radius: 4px;
+}

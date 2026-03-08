@@ -20,15 +20,34 @@ export const Hero = () => {
                 >
                     <div className="inline-flex items-center space-x-3 px-4 py-2 rounded-full border border-holographic-cyan/20 bg-holographic-cyan/5 mb-8">
                         <Shield size={16} className="text-holographic-cyan" />
-                        <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-holographic-cyan">Backend Architect | Cybersecurity Specialist</span>
+                        <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-holographic-cyan">Full Stack Developer | Frontend & Backend Architect</span>
                     </div>
 
                     <h1 className="text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
-                        System <br />
-                        <span className="text-holographic-cyan neon-text-cyan italic">Architectural</span> <br />
-                        <span className="bg-gradient-to-r from-holographic-cyan via-holographic-purple to-holographic-pink bg-clip-text text-transparent">
-                            Precision.
-                        </span>
+                        <motion.span
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            className="block"
+                        >
+                            Architecting
+                        </motion.span>
+                        <motion.span
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.4 }}
+                            className="text-holographic-cyan neon-text-cyan italic block"
+                        >
+                            Modern
+                        </motion.span>
+                        <motion.span
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.6 }}
+                            className="bg-gradient-to-r from-holographic-cyan via-holographic-purple to-holographic-pink bg-clip-text text-transparent block"
+                        >
+                            Digital Success.
+                        </motion.span>
                     </h1>
 
                     <p className="text-gray-400 text-lg md:text-xl mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
@@ -38,14 +57,15 @@ export const Hero = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-                        <motion.button
+                        <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
+                            href="#projects"
                             className="holographic-button group w-full sm:w-auto flex items-center justify-center"
                         >
                             Analyze My Work
                             <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
-                        </motion.button>
+                        </motion.a>
                         <motion.button
                             whileHover={{ backgroundColor: 'rgba(255,255,255,0.05)' }}
                             className="px-8 py-3 rounded-full border border-white/10 transition-all font-bold text-gray-300 w-full sm:w-auto flex items-center justify-center"

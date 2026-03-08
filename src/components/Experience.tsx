@@ -46,11 +46,12 @@ const experiences = [
         period: 'Jun 2022 – Sep 2022',
         location: 'Bungoma, Kenya',
         description: [
-            'Assisted in maintaining IT systems, diagnosing software/network issues, and managing databases.',
-            'Supported data automation initiatives, digital record management, and user training.',
-            'Documented workflows and improved efficiency of internal ICT operations.'
+            'Orchestrated the successful installation of WiFi networks, significantly improving communication efficiency within government offices.',
+            'Managed a team to update Windows operating systems from 7 to 10, ensuring compliance with modern software standards.',
+            'Collaborated with IT technicians to diagnose and resolve complex network issues promptly, reducing downtime.',
+            'Identified and implemented preventive measures to mitigate potential network vulnerabilities, enhancing system security.'
         ],
-        tags: ['System Admin', 'Networking', 'Troubleshooting']
+        tags: ['Network Optimization', 'OS Migration', 'System Security', 'Troubleshooting']
     }
 ];
 

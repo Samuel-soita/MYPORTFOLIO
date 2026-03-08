@@ -24,23 +24,23 @@ const techGroups = [
         title: 'Backend & Logic',
         icon: <Server className="text-holographic-cyan" />,
         skills: [
-            { name: 'Flask (Python)', icon: <FileCode size={14} /> },
-            { name: 'Node.js', icon: <Server size={14} /> },
-            { name: 'Express.js', icon: <Workflow size={14} /> },
-            { name: 'REST / GraphQL', icon: <Zap size={14} /> },
-            { name: 'Authentication', icon: <Lock size={14} /> }
+            { name: 'Python (Software Dev)', icon: <FileCode size={14} /> },
+            { name: 'Node.js / Express', icon: <Server size={14} /> },
+            { name: 'SQL / PostgreSQL', icon: <Database size={14} /> },
+            { name: 'Distributed Systems', icon: <Zap size={14} /> },
+            { name: 'Control Systems', icon: <Workflow size={14} /> }
         ],
         gradient: 'from-holographic-cyan/20 to-holographic-blue/5'
     },
     {
-        title: 'Persistence Layer',
-        icon: <Database className="text-holographic-blue" />,
+        title: 'Network & Security',
+        icon: <Shield className="text-holographic-blue" />,
         skills: [
-            { name: 'Prisma ORM', icon: <Database size={14} /> },
-            { name: 'PostgreSQL', icon: <Database size={14} /> },
-            { name: 'MySQL', icon: <Database size={14} /> },
-            { name: 'NoSQL Concepts', icon: <Layers size={14} /> },
-            { name: 'Optimization', icon: <Zap size={14} /> }
+            { name: 'TCP/IP & OSI Model', icon: <Globe size={14} /> },
+            { name: 'Firewalls / VPNs / IDS', icon: <Lock size={14} /> },
+            { name: 'Wireshark / tcpdump', icon: <Shield size={14} /> },
+            { name: 'Splunk / SIEM', icon: <Zap size={14} /> },
+            { name: 'Malware Analysis', icon: <Box size={14} /> }
         ],
         gradient: 'from-holographic-blue/20 to-holographic-cyan/5'
     },
@@ -48,11 +48,11 @@ const techGroups = [
         title: 'DevOps & Intelligence',
         icon: <Infinity className="text-white" />,
         skills: [
-            { name: 'AWS (EC2/S3)', icon: <Cloud size={14} /> },
-            { name: 'Vercel / Render / Railway', icon: <Globe size={14} /> },
-            { name: 'Docker', icon: <Box size={14} /> },
-            { name: 'CI / CD', icon: <Workflow size={14} /> },
-            { name: 'Security Audit', icon: <Shield size={14} /> }
+            { name: 'Linux / Shell Scripting', icon: <Box size={14} /> },
+            { name: 'AWS Cloud Security', icon: <Cloud size={14} /> },
+            { name: 'Incident Response', icon: <Workflow size={14} /> },
+            { name: 'CI / CD / Github', icon: <Infinity size={14} /> },
+            { name: 'Asset Management', icon: <Layers size={14} /> }
         ],
         gradient: 'from-white/10 to-transparent'
     }

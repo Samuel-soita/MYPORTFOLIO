@@ -12,13 +12,13 @@ const education = [
         institution: 'University of Nairobi',
         degree: 'BSc. Microprocessor & Instrumentation Technology',
         period: 'Sept 2019 – Jun 2023',
-        focus: 'Data Structures, Operating Systems, Computer Security, Embedded Systems, Mobile Communication, Control Systems, Distributed Systems, Satellites & GSM'
+        focus: 'Modern Physics (Nuclear/Atomic), Materials Science, Electricity & Magnetism, Statistical Physics, Antenna Theory, Physical Optics, Signal Recovery & Processing, Control Systems, Mathematical Physics, Microwaves, Database Systems, Distributed Systems, Operating Systems, Data Structures & Algorithms, Mobile communication, Computer security, and Embedded Systems.'
     }
 ];
 
 const certifications = [
-    'Google Cybersecurity Certificate',
-    'Networks and Network Security (Coursera)',
+    'Google Cybersecurity Certificate | April 2024',
+    'Introduction to Cybersecurity | CISCO | April 2024',
     'African Management Institute (AMI) Program',
     'Software Development Certificate (Moringa School)'
 ];

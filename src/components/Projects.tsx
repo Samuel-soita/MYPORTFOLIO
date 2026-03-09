@@ -1,7 +1,21 @@
+import type { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, Brain, Wrench, BarChart3, Shield, Database, Code2 } from 'lucide-react';
 
-const projects = [
+interface Project {
+    title: string;
+    category: string;
+    tech: string[];
+    problem: string;
+    solution: string;
+    impact: string;
+    icon: ReactNode;
+    image: string;
+    live?: string;
+    github?: string;
+}
+
+const projects: Project[] = [
     {
         title: 'Project Tracker',
         category: 'Productivity & Management',
@@ -10,7 +24,8 @@ const projects = [
         solution: 'Engineered a full-stack TypeScript ecosystem featuring role-based access control, real-time CRUD APIs, and automated progress reporting.',
         impact: 'Streamlined team collaboration, reduced reporting overhead, and provided admins with actionable productivity insights.',
         icon: <Code2 className="text-holographic-cyan" />,
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+        live: 'https://project-company-tracker-frontend.vercel.app/'
     },
     {
         title: 'HBS Bazaar',
@@ -88,8 +103,8 @@ export const Projects = () => {
                                     </div>
                                 </div>
                                 <div className="absolute top-6 right-8 flex space-x-3">
-                                    <motion.a whileHover={{ y: -2 }} href="#" className="p-2 glass-card hover:bg-white/10 transition-colors"><Github size={18} /></motion.a>
-                                    <motion.a whileHover={{ y: -2 }} href="#" className="p-2 glass-card hover:bg-white/10 transition-colors"><ExternalLink size={18} /></motion.a>
+                                    <motion.a whileHover={{ y: -2 }} href={project.github || '#'} target={project.github ? "_blank" : undefined} rel={project.github ? "noopener noreferrer" : undefined} className="p-2 glass-card hover:bg-white/10 transition-colors"><Github size={18} /></motion.a>
+                                    <motion.a whileHover={{ y: -2 }} href={project.live || '#'} target={project.live ? "_blank" : undefined} rel={project.live ? "noopener noreferrer" : undefined} className="p-2 glass-card hover:bg-white/10 transition-colors"><ExternalLink size={18} /></motion.a>
                                 </div>
                             </div>
 

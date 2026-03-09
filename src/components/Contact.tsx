@@ -57,7 +57,7 @@ export const Contact = () => {
                         viewport={{ once: true }}
                         className="max-w-5xl mx-auto holographic-card p-12 md:p-20 border-holographic-cyan/20 bg-gradient-to-b from-holographic-cyan/5 to-transparent text-center"
                     >
-                        <h2 className="text-4xl md:text-7xl font-black mb-8 neon-text-cyan tracking-tighter leading-none">
+                        <h2 className="text-4xl md:text-7xl font-black mb-8 neon-text-cyan tracking-tighter leading-none px-4">
                             Let’s build scalable <br className="hidden md:block" /> systems together.
                         </h2>
                         <p className="text-gray-300 text-xl md:text-2xl mb-12 max-w-2xl mx-auto font-medium">

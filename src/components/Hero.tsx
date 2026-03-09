@@ -23,7 +23,7 @@ export const Hero = () => {
                         <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-holographic-cyan">Full Stack Developer | Frontend & Backend Architect</span>
                     </div>
 
-                    <h1 className="text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
+                    <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}

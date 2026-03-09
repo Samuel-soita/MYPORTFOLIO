@@ -226,18 +226,49 @@
             }
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
             .container {
-                padding: 30px;
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                gap: 10px;
+                font-size: 0.8rem;
             }
 
             .item-header {
                 flex-direction: column;
-                gap: 4px;
+                gap: 2px;
             }
 
             .skills-grid {
                 grid-template-cols: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .tagline {
+                font-size: 0.75rem;
+            }
+
+            .contact-info span {
+                width: 100%;
+            }
+
+            .container {
+                padding: 20px 15px;
             }
         }
 

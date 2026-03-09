@@ -9,6 +9,7 @@ const navItems = [
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Education', href: '#education' },
+    { name: 'Resume', href: '/resume.html', isExternal: true },
 ];
 
 export const Navbar = () => {
@@ -45,6 +46,8 @@ export const Navbar = () => {
                         <a
                             key={item.name}
                             href={item.href}
+                            target={item.isExternal ? "_blank" : undefined}
+                            rel={item.isExternal ? "noopener noreferrer" : undefined}
                             className="text-sm font-medium text-gray-300 hover:text-holographic-cyan transition-colors"
                         >
                             {item.name}
@@ -83,6 +86,8 @@ export const Navbar = () => {
                                 <a
                                     key={item.name}
                                     href={item.href}
+                                    target={item.isExternal ? "_blank" : undefined}
+                                    rel={item.isExternal ? "noopener noreferrer" : undefined}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className="text-lg font-medium text-gray-300 hover:text-holographic-cyan transition-colors"
                                 >

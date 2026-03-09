@@ -66,13 +66,17 @@ export const Hero = () => {
                             Analyze My Work
                             <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
                         </motion.a>
-                        <motion.button
-                            whileHover={{ backgroundColor: 'rgba(255,255,255,0.05)' }}
-                            className="px-8 py-3 rounded-full border border-white/10 transition-all font-bold text-gray-300 w-full sm:w-auto flex items-center justify-center"
+                        <motion.a
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            href="/resume.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-8 py-3 rounded-full border border-white/10 transition-all font-bold text-gray-300 w-full sm:w-auto flex items-center justify-center hover:bg-white/5"
                         >
-                            System Document (CV)
+                            Resume
                             <ExternalLink size={14} className="ml-2 opacity-50" />
-                        </motion.button>
+                        </motion.a>
                     </div>
 
                     <div className="mt-16 grid grid-cols-3 gap-8 max-w-md mx-auto lg:mx-0 pt-12 border-t border-white/5">

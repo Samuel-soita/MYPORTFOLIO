@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Soita - Resume</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #050505;
+            --accent-cyan: #00f3ff;
+            --accent-purple: #9d00ff;
+            --text-main: #e0e0e0;
+            --text-muted: #888888;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #fff, var(--text-muted));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--accent-purple);
+            margin-bottom: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .summary {
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .experience-item,
+        .education-item,
+        .project-item {
+            margin-bottom: 30px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: #fff;
+        }
+
+        .item-org {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .item-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+
+        li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-cols: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill-category strong {
+            display: block;
+            color: #fff;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .skill-list {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+
+            .container {
+                border: none;
+                padding: 0;
+                max-width: 100%;
+                background: none;
+            }
+
+            h1,
+            h2,
+            .item-title,
+            .tagline {
+                -webkit-text-fill-color: initial;
+                background: none;
+                color: black;
+            }
+
+            .item-org,
+            .tagline {
+                color: #555;
+            }
+
+            li::before {
+                color: #000;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px;
+            }
+
+            .item-header {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .skills-grid {
+                grid-template-cols: 1fr;
+            }
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+            z-index: 100;
+        }
+
+        .print-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="print-btn" onclick="window.print()">Print to PDF</button>
+
+    <div class="container">
+        <header>
+            <div class="tagline">Full Stack Software Engineer | IT Systems & Cybersecurity</div>
+            <h1>SAMUEL SOITA</h1>
+            <div class="contact-info">
+                <span>Nairobi, Kenya</span>
+                <span>+254 768640343</span>
+                <span>samuelsoita@email.com</span>
+                <span>LinkedIn</span>
+                <span>GitHub</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="summary">
+                Full Stack Software Engineer and IT Systems Specialist with strong expertise in frontend and backend
+                development, enterprise networking, and cybersecurity practices. Experienced in designing and building
+                secure, scalable web applications and distributed systems using technologies including Node.js, React,
+                Python, and PostgreSQL. Skilled in troubleshooting IT infrastructure, implementing security protocols,
+                and developing digital platforms that improve operational efficiency.
+            </p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Agile Software Engineer & Full Stack Developer</span>
+                    <span class="item-date">Nov 2025 – Present</span>
+                </div>
+                <div class="item-org">RemoteXcelsz – United Kingdom (Remote)</div>
+                <ul>
+                    <li>Developed scalable backend services using Node.js and Express to support enterprise web
+                        applications.</li>
+                    <li>Built and optimized RESTful APIs enabling efficient frontend integration and improved system
+                        reliability.</li>
+                    <li>Participated in Agile development cycles including sprint planning, code reviews, and continuous
+                        system improvements.</li>
+                    <li>Implemented debugging and performance optimization strategies to enhance application performance
+                        and stability.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Full Stack Developer</span>
+                    <span class="item-date">Nov 2025 – Feb 2026</span>
+                </div>
+                <div class="item-org">ElCode – United Kingdom (Remote, Part Time)</div>
+                <ul>
+                    <li>Developed responsive frontend interfaces using React.js and modern JavaScript frameworks.</li>
+                    <li>Integrated frontend applications with backend APIs ensuring secure and efficient data exchange.
+                    </li>
+                    <li>Conducted testing and debugging to improve application performance and reliability.</li>
+                    <li>Collaborated with backend engineers to enhance API functionality and overall user experience.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Full Stack Developer (Freelance)</span>
+                    <span class="item-date">Jan 2025 – Present</span>
+                </div>
+                <div class="item-org">Nairobi, Kenya (Remote)</div>
+                <ul>
+                    <li>Designed scalable backend systems using Node.js, Express, and PostgreSQL for modern web
+                        applications.</li>
+                    <li>Implemented secure authentication systems using JWT and Role-Based Access Control (RBAC).</li>
+                    <li>Optimized database structures and queries to improve application speed and efficiency.</li>
+                    <li>Delivered end-to-end solutions including frontend development, backend APIs, and database
+                        integration.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">IT Intern – Network & Systems Support</span>
+                    <span class="item-date">Jun 2022 – Sep 2022</span>
+                </div>
+                <div class="item-org">County Government of Bungoma – Kenya</div>
+                <ul>
+                    <li>Assisted in installing and configuring wireless and wired network infrastructure across
+                        government offices.</li>
+                    <li>Led system upgrades from Windows 7 to Windows 10 improving system security and operational
+                        efficiency.</li>
+                    <li>Diagnosed and resolved network connectivity and hardware issues reducing downtime.</li>
+                    <li>Supported preventive IT maintenance and implementation of cybersecurity best practices.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <strong>Frontend</strong>
+                    <div class="skill-list">React.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS,
+                        Responsive UI</div>
+                </div>
+                <div class="skill-category">
+                    <strong>Backend</strong>
+                    <div class="skill-list">Node.js, Express.js, Python, Flask, REST API, PostgreSQL, SQL</div>
+                </div>
+                <div class="skill-category">
+                    <strong>Cybersecurity & Networking</strong>
+                    <div class="skill-list">TCP/IP, Network Security, Firewalls, VPNs, IDS/IPS, Wireshark, SIEM
+                        (Splunk), IAM</div>
+                </div>
+                <div class="skill-category">
+                    <strong>DevOps & Systems</strong>
+                    <div class="skill-list">Linux Administration, Shell Scripting, CI/CD (GitHub Actions), AWS Cloud
+                        Security</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Experience</h2>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">Enterprise Project Tracker Platform</span>
+                </div>
+                <div class="item-org">Node.js, Express, PostgreSQL, TypeScript, Prisma</div>
+                <ul>
+                    <li>Developed a full-stack project management platform enabling teams to manage projects, tasks, and
+                        reporting workflows.</li>
+                    <li>Implemented secure APIs and role-based access control improving collaboration and reporting
+                        efficiency.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">Smart Trolley – IoT Retail Checkout System</span>
+                </div>
+                <div class="item-org">Python, Embedded Systems, RFID, Daraja M-Pesa API</div>
+                <ul>
+                    <li>Built an automated checkout system using RFID technology to scan products and enable seamless
+                        payment processing.</li>
+                    <li>Integrated mobile payments through the M-Pesa API improving retail checkout efficiency.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">HBS Bazaar – Inventory & E-Commerce Platform</span>
+                </div>
+                <div class="item-org">React.js, Node.js, PostgreSQL, Tailwind CSS</div>
+                <ul>
+                    <li>Developed a centralized inventory and order management system allowing vendors to track stock
+                        levels and sales.</li>
+                    <li>Built responsive dashboards to improve operational visibility and inventory tracking.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">Secure Event Management System</span>
+                </div>
+                <div class="item-org">Flask, React.js, MySQL, JWT Authentication</div>
+                <ul>
+                    <li>Developed a secure event registration platform supporting user authentication and event
+                        management.</li>
+                    <li>Implemented encrypted authentication and secure APIs to protect user data.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <span class="item-title">B.Sc. Microprocessor & Instrumentation Technology</span>
+                    <span class="item-date">2019 – 2023</span>
+                </div>
+                <div class="item-org">University of Nairobi | Nairobi, Kenya</div>
+            </div>
+            <div class="education-item">
+                <div class="item-header">
+                    <span class="item-title">Software Engineering – Full Stack Development</span>
+                    <span class="item-date">2025</span>
+                </div>
+                <div class="item-org">Moringa School</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Google Cybersecurity Professional Certificate</li>
+                <li>Cisco Introduction to Cybersecurity</li>
+                <li>African Management Institute (AMI) Leadership Program</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+
+</html>

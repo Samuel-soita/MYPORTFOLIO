@@ -54,11 +54,14 @@ function App() {
             <a href="https://github.com/Samuel-soita" target="_blank" rel="noopener noreferrer" className="hover:text-holographic-cyan transition-colors uppercase tracking-widest text-[10px] font-bold">
               GitHub
             </a>
-            {['LinkedIn', 'Resume'].map(link => (
+            {['LinkedIn'].map(link => (
               <a key={link} href="#" className="hover:text-holographic-cyan transition-colors uppercase tracking-widest text-[10px] font-bold">
                 {link}
               </a>
             ))}
+            <a href="/resume.html" target="_blank" rel="noopener noreferrer" className="hover:text-holographic-cyan transition-colors uppercase tracking-widest text-[10px] font-bold">
+              Resume
+            </a>
           </div>
         </div>
       </footer>

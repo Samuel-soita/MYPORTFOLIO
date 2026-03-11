@@ -93,7 +93,7 @@ export const Projects = () => {
                                     alt={project.title}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-40 group-hover:opacity-60"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-holographic-dark to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-holographic-dark to-transparent pointer-events-none" />
                                 <div className="absolute bottom-6 left-8 flex items-end space-x-4">
                                     <div className="glass-card p-3 shadow-[0_0_20px_rgba(157,0,255,0.2)]">
                                         {project.icon}
@@ -104,8 +104,12 @@ export const Projects = () => {
                                     </div>
                                 </div>
                                 <div className="absolute top-6 right-8 flex space-x-3">
-                                    <motion.a whileHover={{ y: -2 }} href={project.github || '#'} target={project.github ? "_blank" : undefined} rel={project.github ? "noopener noreferrer" : undefined} className="p-2 glass-card hover:bg-white/10 transition-colors"><Github size={18} /></motion.a>
-                                    <motion.a whileHover={{ y: -2 }} href={project.live || '#'} target={project.live ? "_blank" : undefined} rel={project.live ? "noopener noreferrer" : undefined} className="p-2 glass-card hover:bg-white/10 transition-colors"><ExternalLink size={18} /></motion.a>
+                                    {project.github && (
+                                        <motion.a whileHover={{ y: -2 }} href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 glass-card hover:bg-white/10 transition-colors"><Github size={18} /></motion.a>
+                                    )}
+                                    {project.live && (
+                                        <motion.a whileHover={{ y: -2 }} href={project.live} target="_blank" rel="noopener noreferrer" className="p-2 glass-card hover:bg-white/10 transition-colors"><ExternalLink size={18} /></motion.a>
+                                    )}
                                 </div>
                             </div>
 

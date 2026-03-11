@@ -55,7 +55,8 @@ const projects: Project[] = [
         solution: 'Designed a secure registration platform with JWT-based authentication and a robust MySQL backend for high-concurrency data handling.',
         impact: 'Ensured 100% data integrity, provided real-time event analytics, and hardened the system against unauthorized access.',
         icon: <Shield className="text-holographic-cyan" />,
-        image: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80',
+        live: 'https://event-management-system-rosy-delta.vercel.app/'
     }
 ];
 

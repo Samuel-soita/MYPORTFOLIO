@@ -30,7 +30,7 @@ export const Hero = () => {
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className="block"
                         >
-                            Architecting
+                            Build Better
                         </motion.span>
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ export const Hero = () => {
                             transition={{ duration: 0.6, delay: 0.4 }}
                             className="text-holographic-cyan neon-text-cyan italic block"
                         >
-                            Modern
+                            Digital
                         </motion.span>
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
@@ -46,14 +46,16 @@ export const Hero = () => {
                             transition={{ duration: 0.6, delay: 0.6 }}
                             className="bg-gradient-to-r from-holographic-cyan via-holographic-purple to-holographic-pink bg-clip-text text-transparent block"
                         >
-                            Digital Success.
+                            Experiences
                         </motion.span>
                     </h1>
 
+                    <p className="text-white text-xl md:text-2xl font-semibold mb-4 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Simple, fast, and beautiful platforms that win and get real results
+                    </p>
+
                     <p className="text-gray-400 text-lg md:text-xl mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                        Full-Stack Software Engineer dedicated to building hyper-secure,
-                        high-concurrency systems. Bridging <span className="text-holographic-cyan">hardware-level instrumentation</span> with
-                        <span className="text-holographic-purple"> enterprise cloud scale</span>.
+                        Websites and apps that are easy to use, look great, and work fast. Get more customers with ease. No stress, no confusion — just simple, reliable solutions that help you grow.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">

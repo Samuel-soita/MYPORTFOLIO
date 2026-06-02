@@ -17,6 +17,17 @@ interface Project {
 
 const projects: Project[] = [
     {
+        title: 'PalaceApp',
+        category: 'Enterprise Resource Management',
+        tech: ['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'Redis', 'Socket.io', 'PWA'],
+        problem: 'Legacy HTTP polling bottlenecks and low-connectivity environments hindered complex enterprise resource management, causing data latency and high server loads.',
+        solution: 'Architected an offline-first PWA with a custom IndexedDB background sync daemon, real-time WebSocket (Socket.io) event-driven architecture, and multi-tier RBAC.',
+        impact: 'Successfully deployed into production and actively managing operations for 100+ enterprise users. Reduced API load by >80% and achieved instant global state sync.',
+        icon: <Database className="text-holographic-purple" />,
+        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
+        live: 'https://palace-pwsetsxc6-samuels-projects-2d3d52d2.vercel.app/login'
+    },
+    {
         title: 'Project Tracker',
         category: 'Productivity & Management',
         tech: ['Node.js', 'Express', 'PostgreSQL', 'TypeScript', 'Prisma', 'Redux'],
@@ -36,16 +47,6 @@ const projects: Project[] = [
         impact: 'Improved inventory accuracy, enhanced user engagement through optimized UI, and enabled data-driven sales strategies.',
         icon: <Database className="text-holographic-purple" />,
         image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80'
-    },
-    {
-        title: 'Smart Trolley (IoT)',
-        category: 'Hardware-Software Integration',
-        tech: ['Python', 'Embedded Systems', 'Daraja API', 'RFID'],
-        problem: 'Long supermarket queues created friction in the customer experience, leading to cart abandonment and inefficient checkout processes.',
-        solution: 'Developed an IoT-enabled self-checkout system with mobile scanning and automated M-Pesa payment integration using the Daraja API.',
-        impact: 'Significantly reduced checkout times, minimized human error in billing, and improved overall retail efficiency.',
-        icon: <Brain className="text-holographic-pink" />,
-        image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=800&q=80'
     },
     {
         title: 'Event Management System',
@@ -68,7 +69,7 @@ export const Projects = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="mb-16"
+                    className="mb-16 flex flex-col items-center text-center"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text-purple">Case Studies</h2>
                     <div className="h-1 w-20 bg-holographic-purple rounded-full" />

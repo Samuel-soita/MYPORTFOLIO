@@ -31,7 +31,7 @@ export const Education = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="mb-16"
+                    className="mb-16 flex flex-col items-center text-center"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text-cyan">Academic Foundation</h2>
                     <div className="h-1 w-20 bg-holographic-cyan rounded-full" />

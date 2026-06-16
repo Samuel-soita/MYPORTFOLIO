@@ -47,7 +47,7 @@ const projects: Project[] = [
         impact: 'Delivers a single discovery hub with hero banners, movie detail pages, "Where to Watch" links, and hands-free catalog sync — without hosting or streaming content.',
         icon: <Film className="text-holographic-pink" />,
         image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80',
-        live: 'https://movie-soko.vercel.app/'
+        live: 'https://movie-soko-pac39ekn8-samuels-projects-2d3d52d2.vercel.app/'
     },
     {
         title: 'Event Management System',

@@ -4,7 +4,7 @@ import {
     Server, Globe, Lock,
     Workflow, Cloud,
     FileCode, Layers,
-    Box, Zap, Infinity
+    Box, Zap, Infinity, Container, TestTube, CheckCircle
 } from 'lucide-react';
 
 const techGroups = [
@@ -16,7 +16,8 @@ const techGroups = [
             { name: 'JavaScript (ES6+)', icon: <Code2 size={14} /> },
             { name: 'React.js', icon: <Box size={14} /> },
             { name: 'TypeScript', icon: <Code2 size={14} /> },
-            { name: 'Tailwind CSS', icon: <Layers size={14} /> }
+            { name: 'Tailwind CSS', icon: <Layers size={14} /> },
+            { name: 'Bootstrap CSS', icon: <Layers size={14} /> }
         ],
         gradient: 'from-holographic-purple/20 to-holographic-pink/5'
     },
@@ -26,9 +27,10 @@ const techGroups = [
         skills: [
             { name: 'Python (Software Dev)', icon: <FileCode size={14} /> },
             { name: 'Node.js / Express', icon: <Server size={14} /> },
-            { name: 'SQL / PostgreSQL', icon: <Database size={14} /> },
-            { name: 'Distributed Systems', icon: <Zap size={14} /> },
-            { name: 'Control Systems', icon: <Workflow size={14} /> }
+            { name: 'SQL / PostgreSQL / MySQL', icon: <Database size={14} /> },
+            { name: 'MongoDB / Mongoose', icon: <Database size={14} /> },
+            { name: 'Prisma ORM', icon: <Database size={14} /> },
+            { name: 'REST / Third-Party APIs', icon: <Globe size={14} /> }
         ],
         gradient: 'from-holographic-cyan/20 to-holographic-blue/5'
     },
@@ -45,14 +47,26 @@ const techGroups = [
         gradient: 'from-holographic-blue/20 to-holographic-cyan/5'
     },
     {
-        title: 'DevOps & Intelligence',
+        title: 'Testing & Quality',
+        icon: <TestTube className="text-holographic-pink" />,
+        skills: [
+            { name: 'Jest', icon: <CheckCircle size={14} /> },
+            { name: 'Cypress', icon: <CheckCircle size={14} /> },
+            { name: 'TDD', icon: <Workflow size={14} /> },
+            { name: 'CI/CD', icon: <Infinity size={14} /> }
+        ],
+        gradient: 'from-holographic-pink/20 to-holographic-purple/5'
+    },
+    {
+        title: 'DevOps & Tooling',
         icon: <Infinity className="text-white" />,
         skills: [
             { name: 'Linux / Shell Scripting', icon: <Box size={14} /> },
             { name: 'AWS Cloud Security', icon: <Cloud size={14} /> },
             { name: 'Incident Response', icon: <Workflow size={14} /> },
-            { name: 'CI / CD / Github', icon: <Infinity size={14} /> },
-            { name: 'Asset Management', icon: <Layers size={14} /> }
+            { name: 'Git / GitHub', icon: <Infinity size={14} /> },
+            { name: 'Cron Jobs (node-cron)', icon: <Zap size={14} /> },
+            { name: 'Docker / MCP Servers', icon: <Container size={14} /> }
         ],
         gradient: 'from-white/10 to-transparent'
     }
@@ -69,17 +83,17 @@ export const Skills = () => {
                         viewport={{ once: true }}
                         className="text-4xl md:text-5xl font-bold mb-6 neon-text-purple tracking-tight"
                     >
-                        Engineering Ecosystem
+                        Full Stack Toolkit
                     </motion.h2>
                     <div className="h-1.5 w-24 bg-gradient-to-r from-holographic-cyan via-holographic-purple to-holographic-pink rounded-full mb-8 shadow-[0_0_15px_rgba(157,0,255,0.4)]" />
                     <p className="text-gray-400 max-w-2xl text-lg leading-relaxed">
-                        Strategic selection of modern technologies prioritized for <span className="text-holographic-cyan font-bold">performance</span>,
-                        <span className="text-holographic-purple font-bold"> scalability</span>, and
-                        <span className="text-holographic-pink font-bold"> reliability</span>.
+                        Technologies I use to build <span className="text-holographic-cyan font-bold">frontend interfaces</span>,
+                        <span className="text-holographic-purple font-bold"> backend services</span>, and
+                        <span className="text-holographic-pink font-bold"> production deployments</span>.
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
                     {techGroups.map((group, idx) => (
                         <motion.div
                             key={group.title}

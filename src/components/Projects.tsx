@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Brain, Wrench, BarChart3, Shield, Database, Code2 } from 'lucide-react';
+import { Github, ExternalLink, Brain, Wrench, BarChart3, Shield, Database, Code2, Film } from 'lucide-react';
 
 interface Project {
     title: string;
@@ -39,14 +39,15 @@ const projects: Project[] = [
         live: 'https://project-company-tracker-frontend.vercel.app/'
     },
     {
-        title: 'HBS Bazaar',
-        category: 'E-Commerce Platform',
-        tech: ['React.js', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'REST APIs'],
-        problem: 'Small-scale vendors lacked a centralized platform for inventory management and sales analytics, leading to stock discrepancies.',
-        solution: 'Built a scalable e-commerce solution with modular components, asynchronous data fetching, and an integrated analytics dashboard.',
-        impact: 'Improved inventory accuracy, enhanced user engagement through optimized UI, and enabled data-driven sales strategies.',
-        icon: <Database className="text-holographic-purple" />,
-        image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80'
+        title: 'CineHub',
+        category: 'Movie Aggregator Platform',
+        tech: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'TMDB API', 'node-cron'],
+        problem: 'Movie discovery data was fragmented across TMDB, OMDb, and streaming providers, with no unified Netflix-style experience or automated catalog updates.',
+        solution: 'Built a holographic movie aggregator with trending/popular/upcoming rows, genre browsing, 3D tilt cards, trailer playback, live search with TMDB fallback, localStorage watchlists, and 6-hour cron sync via Node.js, Express, and MongoDB.',
+        impact: 'Delivers a single discovery hub with hero banners, movie detail pages, "Where to Watch" links, and hands-free catalog sync — without hosting or streaming content.',
+        icon: <Film className="text-holographic-pink" />,
+        image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80',
+        live: 'https://movie-soko.vercel.app/'
     },
     {
         title: 'Event Management System',
@@ -71,10 +72,10 @@ export const Projects = () => {
                     viewport={{ once: true }}
                     className="mb-16 flex flex-col items-center text-center"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text-purple">Case Studies</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text-purple">Full Stack Projects</h2>
                     <div className="h-1 w-20 bg-holographic-purple rounded-full" />
                     <p className="mt-6 text-gray-400 max-w-2xl italic">
-                        "We don't just write code; we solve business problems with engineering precision."
+                        Production applications spanning frontend UIs, backend APIs, and database-driven features.
                     </p>
                 </motion.div>
 

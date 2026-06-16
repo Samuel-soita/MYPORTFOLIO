@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import { Shield, Database, Cpu, ArrowRight, ExternalLink } from 'lucide-react';
+import { Code2, Cpu, ArrowRight, ExternalLink, Layers, Server } from 'lucide-react';
 import soitaPhoto from '../assets/soita.png';
 
 export const Hero = () => {
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-20 pb-32 overflow-hidden bg-holographic-dark">
+        <section id="about" className="relative min-h-screen flex items-center justify-center pt-20 pb-32 overflow-hidden bg-holographic-dark">
             {/* Dynamic Background Elements */}
             <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-holographic-cyan/5 rounded-full blur-[140px] animate-pulse pointer-events-none" />
             <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-holographic-purple/5 rounded-full blur-[140px] animate-pulse pointer-events-none" style={{ animationDelay: '3s' }} />
@@ -19,8 +19,8 @@ export const Hero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     <div className="inline-flex items-center space-x-3 px-4 py-2 rounded-full border border-holographic-cyan/20 bg-holographic-cyan/5 mb-8">
-                        <Shield size={16} className="text-holographic-cyan" />
-                        <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-holographic-cyan">Full Stack Developer | Frontend & Backend Architect</span>
+                        <Code2 size={16} className="text-holographic-cyan" />
+                        <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-holographic-cyan">Full Stack Software Engineer · Frontend & Backend</span>
                     </div>
 
                     <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter">
@@ -30,7 +30,7 @@ export const Hero = () => {
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className="block"
                         >
-                            Build Better
+                            Full Stack
                         </motion.span>
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ export const Hero = () => {
                             transition={{ duration: 0.6, delay: 0.4 }}
                             className="text-holographic-cyan neon-text-cyan italic block"
                         >
-                            Digital
+                            Software
                         </motion.span>
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
@@ -46,16 +46,16 @@ export const Hero = () => {
                             transition={{ duration: 0.6, delay: 0.6 }}
                             className="bg-gradient-to-r from-holographic-cyan via-holographic-purple to-holographic-pink bg-clip-text text-transparent block"
                         >
-                            Experiences
+                            Engineer
                         </motion.span>
                     </h1>
 
                     <p className="text-white text-xl md:text-2xl font-semibold mb-4 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                        Simple, fast, and beautiful platforms that win and get real results
+                        I design, build, and ship production-ready frontend and backend applications.
                     </p>
 
                     <p className="text-gray-400 text-lg md:text-xl mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                        Websites and apps that are easy to use, look great, and work fast. Get more customers with ease. No stress, no confusion — just simple, reliable solutions that help you grow.
+                        Junior-to-mid level software engineer with hands-on experience across React, TypeScript, Node.js, and PostgreSQL — from REST APIs and database design to responsive UIs deployed in production.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
@@ -65,7 +65,7 @@ export const Hero = () => {
                             href="#projects"
                             className="holographic-button group w-full sm:w-auto flex items-center justify-center"
                         >
-                            Analyze My Work
+                            View My Projects
                             <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
                         </motion.a>
                         <motion.a
@@ -83,12 +83,12 @@ export const Hero = () => {
 
                     <div className="mt-16 grid grid-cols-3 gap-8 max-w-md mx-auto lg:mx-0 pt-12 border-t border-white/5">
                         {[
-                            { label: 'Cloud Systems', val: 'AWS' },
-                            { label: 'Backend Architecture', val: 'Node/TS' },
-                            { label: 'Hardened Security', icon: <Lock size={12} /> }
+                            { label: 'Frontend', val: 'React/TS' },
+                            { label: 'Backend', val: 'Node.js' },
+                            { label: 'Databases', val: 'SQL + NoSQL' }
                         ].map((stat, i) => (
                             <div key={i} className="flex flex-col">
-                                <span className="text-xl font-black text-white flex items-center">{stat.val || stat.icon}</span>
+                                <span className="text-xl font-black text-white flex items-center">{stat.val}</span>
                                 <span className="text-[8px] uppercase tracking-widest text-gray-500 mt-1 font-bold">{stat.label}</span>
                             </div>
                         ))}
@@ -112,10 +112,10 @@ export const Hero = () => {
                             <Cpu size={28} />
                         </motion.div>
                         <motion.div animate={{ y: [0, 20, 0] }} transition={{ repeat: Infinity, duration: 5, delay: 0.5 }} className="absolute bottom-12 -left-10 w-16 h-16 glass-card flex items-center justify-center text-holographic-purple shadow-[0_0_20px_rgba(157,0,255,0.2)]">
-                            <Database size={28} />
+                            <Server size={28} />
                         </motion.div>
                         <motion.div animate={{ x: [0, 15, 0] }} transition={{ repeat: Infinity, duration: 6 }} className="absolute top-1/2 -right-12 w-14 h-14 glass-card flex items-center justify-center text-holographic-pink">
-                            <Shield size={24} />
+                            <Layers size={24} />
                         </motion.div>
 
                         <div className="w-full h-full rounded-[3.5rem] overflow-hidden border border-white/10 relative group bg-black/40 backdrop-blur-sm">
@@ -128,10 +128,10 @@ export const Hero = () => {
                             {/* Data Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-holographic-dark via-transparent to-transparent opacity-80" />
                             <div className="absolute top-12 left-12 opacity-20 font-mono text-[10px] space-y-1 hidden md:block select-none pointer-events-none font-black tracking-tighter">
-                                <p className="text-holographic-cyan">SOURCE: LOCALHOST:3000</p>
-                                <p className="text-holographic-purple">STATUS: ACTIVE_ENGINEER</p>
-                                <p className="text-white">IP: 192.168.1.1</p>
-                                <p className="text-holographic-pink">SEC_AUTH: VERIFIED</p>
+                                <p className="text-holographic-cyan">ROLE: FULL_STACK_ENGINEER</p>
+                                <p className="text-holographic-purple">STACK: REACT · NODE · TS</p>
+                                <p className="text-white">LEVEL: JUNIOR–MID</p>
+                                <p className="text-holographic-pink">STATUS: OPEN_TO_WORK</p>
                             </div>
 
                             {/* Holographic Scanline */}
@@ -143,5 +143,3 @@ export const Hero = () => {
         </section>
     );
 };
-
-import { Lock } from 'lucide-react';

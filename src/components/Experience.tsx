@@ -3,42 +3,44 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 const experiences = [
     {
-        title: 'Agile Software Engineer & Fullstack Developer',
+        title: 'Software Engineer (Full Stack)',
         company: 'RemoteXcelsz, UK',
         period: 'Nov 2024 – Present',
         location: 'Remote',
         description: [
-            'Designed and maintained backend services using Node.js and Express to support scalable web applications.',
-            'Built and optimized RESTful APIs to ensure high performance and reliability.',
-            'Collaborated with frontend teams to ensure seamless API integration.',
-            'Participated in code reviews, debugging sessions, and performance optimization within an Agile team.'
+            'Build and maintain backend services with Node.js and Express for production web applications.',
+            'Develop and optimize RESTful APIs consumed by frontend teams and third-party integrations.',
+            'Collaborate across frontend and backend to deliver end-to-end features in Agile sprints.',
+            'Participate in code reviews, debugging, and performance tuning across the full stack.'
         ],
-        tags: ['Node.js', 'Express', 'API Optimization', 'Agile']
+        tags: ['Node.js', 'Express', 'REST APIs', 'Full Stack']
     },
     {
-        title: 'Frontend Developer (API-Integrated)',
+        title: 'Frontend Software Engineer',
         company: 'ElCode, UK',
         period: 'Nov 2024 – Present',
         location: 'Remote (Part-Time)',
         description: [
-            'Integrated frontend applications with secure backend APIs.',
-            'Collaborated with backend engineers to optimize API usage and performance.',
-            'Improved application reliability through structured debugging and testing.'
+            'Build responsive frontend applications with React and modern JavaScript.',
+            'Integrate UI components with secure backend APIs for reliable data flow.',
+            'Partner with backend engineers to improve API contracts and application performance.',
+            'Test and debug frontend features to maintain production quality.'
         ],
-        tags: ['React', 'API Integration', 'Debugging']
+        tags: ['React', 'TypeScript', 'Frontend', 'API Integration']
     },
     {
-        title: 'Fullstack Developer (Freelance)',
+        title: 'Software Engineer (Full Stack) · Freelance',
         company: 'Nairobi, Kenya',
         period: 'Jan 2024 – Present',
         location: 'Remote',
         description: [
-            'Developed backend systems using Node.js, Express, and PostgreSQL for production applications.',
-            'Designed database schemas and optimized queries for performance and scalability.',
-            'Implemented authentication, authorization, and role-based access control.',
-            'Managed Git workflows and collaborated asynchronously with distributed teams.'
+            'Deliver full-stack web applications with React frontends and Node.js/Express backends.',
+            'Design PostgreSQL and MongoDB schemas with optimized queries for scalable data access.',
+            'Implement authentication, authorization, and role-based access control in production apps.',
+            'Containerized MCP server deployments with Docker for reproducible AI tool integrations.',
+            'Ship end-to-end solutions from UI design through API development and database integration.'
         ],
-        tags: ['PostgreSQL', 'JWT', 'System Design']
+        tags: ['React', 'Node.js', 'PostgreSQL', 'Docker']
     },
     {
         title: 'IT Intern',
@@ -63,9 +65,9 @@ export const Experience = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="mb-16"
+                    className="mb-16 flex flex-col items-center text-center"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text-cyan">Professional Journey</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4 neon-text-cyan">Software Engineering Experience</h2>
                     <div className="h-1 w-20 bg-holographic-cyan rounded-full" />
                 </motion.div>
 

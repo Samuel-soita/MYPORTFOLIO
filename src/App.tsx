@@ -5,6 +5,7 @@ import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Education } from './components/Education';
 import { Contact } from './components/Contact';
+import { StarBackground } from './components/StarBackground';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
         className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-holographic-cyan to-holographic-purple z-[60] origin-left"
         style={{ scaleX }}
       />
+
+      {/* Rotating star field */}
+      <StarBackground />
 
       {/* Global Background Particles/Glows */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -49,7 +53,7 @@ function App() {
 
       <footer className="py-12 border-t border-white/5 text-center text-gray-500 text-sm relative z-10 bg-black/50 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-          <p>© {new Date().getFullYear()} Samuel Soita. Engineered with Precision.</p>
+          <p>© {new Date().getFullYear()} Samuel Soita. Full Stack Software Engineer.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="https://github.com/Samuel-soita" target="_blank" rel="noopener noreferrer" className="hover:text-holographic-cyan transition-colors uppercase tracking-widest text-[10px] font-bold">
               GitHub

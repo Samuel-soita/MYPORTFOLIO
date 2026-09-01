@@ -17,6 +17,8 @@ const education = [
 ];
 
 const certifications = [
+    'Datacom Cyber Security Operations Job Simulation | Forage | August 2026',
+    'Commonwealth Bank Software Engineering Job Simulation | Forage | August 2026',
     'HPE Software Engineering Job Simulation | Forage | August 2026',
     'Google Cybersecurity Certificate | April 2024',
     'Introduction to Cybersecurity | CISCO | April 2024',

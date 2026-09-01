@@ -43,17 +43,43 @@ const experiences = [
         tags: ['React', 'Node.js', 'PostgreSQL', 'Docker']
     },
     {
+        title: 'Cyber Security Operations Job Simulation',
+        company: 'Datacom · Forage',
+        period: 'August 2026',
+        location: 'Remote',
+        description: [
+            'Completed a simulation focused on how Datacom\'s cybersecurity team helps protect its clients.',
+            'Investigated a cyberattack and produced a comprehensive report documenting findings and outlining key recommendations to improve a client\'s cybersecurity posture.',
+            'Conducted a comprehensive risk assessment to identify vulnerabilities and prioritize remediation strategies.',
+            'Applied analytical skills, OSINT research, and security analysis to deliver actionable risk management recommendations.'
+        ],
+        tags: ['Risk Assessment', 'Security Analysis', 'OSINT', 'Incident Response', 'Risk Management']
+    },
+    {
+        title: 'Software Engineering Job Simulation',
+        company: 'Commonwealth Bank · Forage',
+        period: 'August 2026',
+        location: 'Remote',
+        description: [
+            'Completed a job simulation focused on backend and frontend development for Commonwealth Bank\'s Software Engineering team.',
+            'Extended the backend using C# to enable icons, gaining proficiency in .NET, MongoDB, Postman, and Git.',
+            'Modified an existing React/Redux frontend to enable icons, expanding expertise in React, Redux, TypeScript, NPM, and Git.',
+            'Strengthened coding skills with C#, xUnit, and .NET unit testing, ensuring comprehensive code coverage and support for icons.',
+            'Improved Git and GitHub skills, emphasizing effective communication through the submission of changes for team review.'
+        ],
+        tags: ['C#', '.NET', 'MongoDB', 'React', 'Redux', 'TypeScript', 'xUnit', 'Postman']
+    },
+    {
         title: 'Software Engineering Job Simulation',
         company: 'Hewlett Packard Enterprise (HPE) · Forage',
         period: 'August 2026',
         location: 'Remote',
         description: [
-            'Wrote a detailed proposal for a RESTful web service to manage a list of employees, covering API design and data modeling.',
-            'Built a web server application in Java Spring Boot capable of accepting and responding to HTTP requests and supporting JSON data upload.',
-            'Developed and executed a comprehensive suite of unit tests to assess application performance and ensure code reliability.',
-            'Gained hands-on exposure to HPE GreenLake, API development, and enterprise-grade backend engineering practices.'
+            'Wrote a proposal for a RESTful web service to manage a list of employees.',
+            'Built a web server application in Java Spring Boot that can accept and respond to HTTP requests as well as support uploading JSON data.',
+            'Developed and ran a set of unit tests to assess my Java Spring Boot application\'s performance.'
         ],
-        tags: ['Java', 'Spring Boot', 'REST API', 'Unit Testing', 'JSON', 'JUnit', 'HPE GreenLake']
+        tags: ['Java', 'Spring Boot', 'REST API', 'API Development', 'JSON', 'HTTP', 'Unit Testing', 'Test Frameworks', 'HPE GreenLake']
     },
     {
         title: 'IT Intern',

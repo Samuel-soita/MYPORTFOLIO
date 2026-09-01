@@ -15,6 +15,7 @@ const techGroups = [
             { name: 'HTML5 / CSS3', icon: <FileCode size={14} /> },
             { name: 'JavaScript (ES6+)', icon: <Code2 size={14} /> },
             { name: 'React.js', icon: <Box size={14} /> },
+            { name: 'Redux / State Management', icon: <Box size={14} /> },
             { name: 'TypeScript', icon: <Code2 size={14} /> },
             { name: 'Tailwind CSS', icon: <Layers size={14} /> },
             { name: 'Bootstrap CSS', icon: <Layers size={14} /> }
@@ -27,11 +28,17 @@ const techGroups = [
         skills: [
             { name: 'Python (Software Dev)', icon: <FileCode size={14} /> },
             { name: 'Node.js / Express', icon: <Server size={14} /> },
+            { name: 'C# / .NET', icon: <Server size={14} /> },
             { name: 'SQL / PostgreSQL / MySQL', icon: <Database size={14} /> },
-            { name: 'MongoDB / Mongoose', icon: <Database size={14} /> },
+            { name: 'MongoDB / NoSQL', icon: <Database size={14} /> },
             { name: 'Prisma ORM', icon: <Database size={14} /> },
             { name: 'REST / Third-Party APIs', icon: <Globe size={14} /> },
-            { name: 'Java / Spring Boot', icon: <Server size={14} /> }
+            { name: 'REST API Development', icon: <Globe size={14} /> },
+            { name: 'API Development', icon: <Globe size={14} /> },
+            { name: 'Java / Spring Boot', icon: <Server size={14} /> },
+            { name: 'JSON Data Handling', icon: <FileCode size={14} /> },
+            { name: 'HTTP Protocol', icon: <Globe size={14} /> },
+            { name: 'HTTP Client Libraries', icon: <Globe size={14} /> }
         ],
         gradient: 'from-holographic-cyan/20 to-holographic-blue/5'
     },
@@ -40,6 +47,10 @@ const techGroups = [
         icon: <Shield className="text-holographic-blue" />,
         skills: [
             { name: 'TCP/IP & OSI Model', icon: <Globe size={14} /> },
+            { name: 'Information Security', icon: <Lock size={14} /> },
+            { name: 'Security Analysis', icon: <Shield size={14} /> },
+            { name: 'Risk Assessment / Management', icon: <Workflow size={14} /> },
+            { name: 'Open Source Intelligence (OSINT)', icon: <Globe size={14} /> },
             { name: 'Firewalls / VPNs / IDS', icon: <Lock size={14} /> },
             { name: 'Wireshark / tcpdump', icon: <Shield size={14} /> },
             { name: 'Splunk / SIEM', icon: <Zap size={14} /> },
@@ -54,6 +65,10 @@ const techGroups = [
             { name: 'Jest', icon: <CheckCircle size={14} /> },
             { name: 'Cypress', icon: <CheckCircle size={14} /> },
             { name: 'JUnit (Unit Testing)', icon: <CheckCircle size={14} /> },
+            { name: 'Test Frameworks', icon: <CheckCircle size={14} /> },
+            { name: 'Unit Testing', icon: <CheckCircle size={14} /> },
+            { name: 'xUnit / C# Unit Testing', icon: <CheckCircle size={14} /> },
+            { name: 'Postman / API Testing', icon: <CheckCircle size={14} /> },
             { name: 'TDD', icon: <Workflow size={14} /> },
             { name: 'CI/CD', icon: <Infinity size={14} /> }
         ],
@@ -65,6 +80,7 @@ const techGroups = [
         skills: [
             { name: 'Linux / Shell Scripting', icon: <Box size={14} /> },
             { name: 'AWS Cloud Security', icon: <Cloud size={14} /> },
+            { name: 'HPE GreenLake', icon: <Cloud size={14} /> },
             { name: 'Incident Response', icon: <Workflow size={14} /> },
             { name: 'Git / GitHub', icon: <Infinity size={14} /> },
             { name: 'Cron Jobs (node-cron)', icon: <Zap size={14} /> },

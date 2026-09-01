@@ -17,6 +17,7 @@ const education = [
 ];
 
 const certifications = [
+    'HPE Software Engineering Job Simulation | Forage | August 2026',
     'Google Cybersecurity Certificate | April 2024',
     'Introduction to Cybersecurity | CISCO | April 2024',
     'African Management Institute (AMI) Program',

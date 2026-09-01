@@ -30,7 +30,8 @@ const techGroups = [
             { name: 'SQL / PostgreSQL / MySQL', icon: <Database size={14} /> },
             { name: 'MongoDB / Mongoose', icon: <Database size={14} /> },
             { name: 'Prisma ORM', icon: <Database size={14} /> },
-            { name: 'REST / Third-Party APIs', icon: <Globe size={14} /> }
+            { name: 'REST / Third-Party APIs', icon: <Globe size={14} /> },
+            { name: 'Java / Spring Boot', icon: <Server size={14} /> }
         ],
         gradient: 'from-holographic-cyan/20 to-holographic-blue/5'
     },
@@ -52,6 +53,7 @@ const techGroups = [
         skills: [
             { name: 'Jest', icon: <CheckCircle size={14} /> },
             { name: 'Cypress', icon: <CheckCircle size={14} /> },
+            { name: 'JUnit (Unit Testing)', icon: <CheckCircle size={14} /> },
             { name: 'TDD', icon: <Workflow size={14} /> },
             { name: 'CI/CD', icon: <Infinity size={14} /> }
         ],

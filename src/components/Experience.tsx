@@ -43,6 +43,19 @@ const experiences = [
         tags: ['React', 'Node.js', 'PostgreSQL', 'Docker']
     },
     {
+        title: 'Software Engineering Job Simulation',
+        company: 'Hewlett Packard Enterprise (HPE) · Forage',
+        period: 'August 2026',
+        location: 'Remote',
+        description: [
+            'Wrote a detailed proposal for a RESTful web service to manage a list of employees, covering API design and data modeling.',
+            'Built a web server application in Java Spring Boot capable of accepting and responding to HTTP requests and supporting JSON data upload.',
+            'Developed and executed a comprehensive suite of unit tests to assess application performance and ensure code reliability.',
+            'Gained hands-on exposure to HPE GreenLake, API development, and enterprise-grade backend engineering practices.'
+        ],
+        tags: ['Java', 'Spring Boot', 'REST API', 'Unit Testing', 'JSON', 'JUnit', 'HPE GreenLake']
+    },
+    {
         title: 'IT Intern',
         company: 'County Government of Bungoma',
         period: 'Jun 2022 – Sep 2022',

@@ -9,10 +9,10 @@ const education = [
         focus: 'Comprehensive Software Engineering, Full Stack Web Development (HTML/CSS, JavaScript, Python/Flask, React), System Design, and Database Management.'
     },
     {
-        institution: 'University of Nairobi',
-        degree: 'BSc. Microprocessor & Instrumentation Technology',
-        period: 'Sept 2019 – Jun 2023',
-        focus: 'Modern Physics (Nuclear/Atomic), Materials Science, Electricity & Magnetism, Statistical Physics, Antenna Theory, Physical Optics, Signal Recovery & Processing, Control Systems, Mathematical Physics, Microwaves, Database Systems, Distributed Systems, Operating Systems, Data Structures & Algorithms, Mobile communication, Computer security, and Embedded Systems.'
+        institution: 'University of Nairobi | Nairobi, Kenya',
+        degree: 'BSc. Microprocessor and Instrumentation Technology',
+        period: 'September 2019 – June 2023',
+        focus: 'Nuclear Physics, Atomic Physics, Physics of Materials, Electricity and Magnetism I & II, Statistical Physics, Antenna Theory & Radiowave Propagation, Physical Optics, Signal Recovery and Processing, Control Systems, Mathematical Physics, Microwaves Theory and Devices, Database Systems, Distributed Systems, Operating Systems, Data Structures and Algorithms, Mobile Communication, Computer Security, Embedded Systems, Computing, Programming C++.'
     }
 ];
 
@@ -27,7 +27,7 @@ const certifications = [
     'Walmart USA Advanced Software Engineering Job Simulation | Forage | August 2026',
     'Commonwealth Bank Software Engineering Job Simulation | Forage | August 2026',
     'HPE Software Engineering Job Simulation | Forage | August 2026',
-    'Google Cybersecurity Certificate | April 2024',
+    'Google Cybersecurity Professional Certificate V2 | Coursera | April 2024',
     'Introduction to Cybersecurity | CISCO | April 2024',
     'African Management Institute (AMI) Program',
     'Software Development Certificate (Moringa School)'

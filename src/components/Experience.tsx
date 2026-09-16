@@ -43,6 +43,80 @@ const experiences = [
         tags: ['React', 'Node.js', 'PostgreSQL', 'Docker']
     },
     {
+        title: 'Venture Capital Job Simulation',
+        company: 'H2 Ventures · Forage',
+        period: 'September 2026',
+        location: 'Remote',
+        description: [
+            'Completed H2 Ventures\' Venture Capital job simulation focused on evaluating startups and investment opportunities.',
+            'Applied comparable analysis, opportunity assessment, and success factors analysis to assess early-stage companies.',
+            'Practiced startup financial modeling and venture capital financial modelling to support investment decisions.',
+            'Strengthened skills in growth marketing, investment management, and startup evaluation.'
+        ],
+        tags: ['Venture Capital', 'Startup Evaluation', 'Financial Modeling', 'Comparable Analysis', 'Opportunity Assessment']
+    },
+    {
+        title: 'Front-End Software Engineering Job Simulation',
+        company: 'Skyscanner · Forage',
+        period: 'September 2026',
+        location: 'Remote',
+        description: [
+            'Completed a job simulation building a web application using React as a front-end engineer at Skyscanner.',
+            'Developed a page for picking a travel date using Skyscanner\'s open-source Backpack React library.',
+            'Customised the application and ran automated tests to ensure it rendered properly.'
+        ],
+        tags: ['React', 'JavaScript', 'Backpack', 'Front-End', 'Automated Testing']
+    },
+    {
+        title: 'Software Development Job Simulation',
+        company: 'Datacom · Forage',
+        period: 'September 2026',
+        location: 'Remote',
+        description: [
+            'Completed a simulation focused on how the software development team at Datacom approaches their work.',
+            'Reviewed a web application and planned for future improvements.',
+            'Identified the root cause of bugs and implemented a fix to improve the application.'
+        ],
+        tags: ['Software Development', 'Root Cause Analysis', 'Critical Thinking', 'Software Evaluation']
+    },
+    {
+        title: 'Software Engineering Job Simulation',
+        company: 'Skyscanner · Forage',
+        period: 'September 2026',
+        location: 'Remote',
+        description: [
+            'Completed a job simulation involving building a basic web app for Skyscanner\'s engineering team.',
+            'Created a Dropwizard microservice to assist users in finding car rentals and hotels.',
+            'Developed an Android application to display a user\'s flight itinerary using Backpack.'
+        ],
+        tags: ['Java', 'Dropwizard', 'Microservices', 'Android', 'Kotlin', 'Backpack', 'React']
+    },
+    {
+        title: 'Technology Software Development Job Simulation',
+        company: 'Citi · Forage',
+        period: 'September 2026',
+        location: 'Remote',
+        description: [
+            'Completed a job simulation involving hypothetical tasks to improve Citi\'s loan management system and stock market risk reporting.',
+            'Created a state diagram of the loan management process using the Unified Modeling Language (UML).',
+            'Researched potential machine learning systems to assess credit risk and provided recommendations for next steps.',
+            'Used Java to build an internal tool visualizing stock market risk in real time.'
+        ],
+        tags: ['Java', 'UML', 'System Design', 'Machine Learning', 'Data Visualization', 'Risk Assessment']
+    },
+    {
+        title: 'Cybersecurity Job Simulation',
+        company: 'Mastercard · Forage',
+        period: 'September 2026',
+        location: 'Remote',
+        description: [
+            'Completed a job simulation serving as an analyst on Mastercard\'s Security Awareness Team.',
+            'Helped identify and report security threats such as phishing.',
+            'Analyzed which areas of the business needed more robust security training and implemented training courses and procedures for those teams.'
+        ],
+        tags: ['Cybersecurity', 'Security Awareness', 'Phishing', 'Data Analysis', 'Security Training']
+    },
+    {
         title: 'Cyber Security Operations Job Simulation',
         company: 'Datacom · Forage',
         period: 'August 2026',
@@ -54,6 +128,19 @@ const experiences = [
             'Applied analytical skills, OSINT research, and security analysis to deliver actionable risk management recommendations.'
         ],
         tags: ['Risk Assessment', 'Security Analysis', 'OSINT', 'Incident Response', 'Risk Management']
+    },
+    {
+        title: 'Advanced Software Engineering Job Simulation',
+        company: 'Walmart USA · Forage',
+        period: 'August 2026',
+        location: 'Remote',
+        description: [
+            'Completed the Advanced Software Engineering Job Simulation solving difficult technical projects for a variety of teams at Walmart.',
+            'Developed a novel version of a heap data structure in Java for Walmart\'s shipping department, showcasing strong problem-solving and algorithmic skills.',
+            'Designed a UML class diagram for a data processor, considering different operating modes and database connections.',
+            'Created an entity relationship diagram to design a new database accounting for all requirements provided by Walmart\'s pet department.'
+        ],
+        tags: ['Java', 'Data Structures', 'UML', 'Database Design', 'SQL', 'Software Architecture']
     },
     {
         title: 'Software Engineering Job Simulation',

@@ -17,7 +17,14 @@ const education = [
 ];
 
 const certifications = [
+    'H2 Ventures Venture Capital Job Simulation | Forage | September 2026',
+    'Skyscanner Front-End Software Engineering Job Simulation | Forage | September 2026',
+    'Datacom Software Development Job Simulation | Forage | September 2026',
+    'Skyscanner Software Engineering Job Simulation | Forage | September 2026',
+    'Citi Technology Software Development Job Simulation | Forage | September 2026',
+    'Mastercard Cybersecurity Job Simulation | Forage | September 2026',
     'Datacom Cyber Security Operations Job Simulation | Forage | August 2026',
+    'Walmart USA Advanced Software Engineering Job Simulation | Forage | August 2026',
     'Commonwealth Bank Software Engineering Job Simulation | Forage | August 2026',
     'HPE Software Engineering Job Simulation | Forage | August 2026',
     'Google Cybersecurity Certificate | April 2024',
